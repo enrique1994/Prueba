@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Listas</title>
+	<style type="text/css">
+		*{
+			padding: 10;
+			margin: 0 auto;
+		}
+		h1{
+			
+			font-size: 80px;
+		}
+		h2{
+			font-size: 40px;
+			color:#C314C4;
+			padding: 10px;
+		}
+		header, footer, main, nav {
+			width: 1250px;
+		}
+		header, footer {
+			height: 80px;
+			padding: 20px;
+			background-color: #D598C9; 
+			color: #F5E6FF;
+		}
+		footer {
+			text-align: right;
+			font-size: 20px;
+		}
+		nav {
+    height: auto;
+    background-color: #ABE3EA;}
+		body nav ul {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 25px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+		a{
+	text-decoration: none;
+}
+a:link {
+	color: #afaff3;
+	font-weight: bolder;
+}
+
+a:visited{
+	color: #ED756E;
+	font-weight: bolder
+}
+a:hover {
+    color: #F6DC33;
+    font-weight: bolder;
+    font-size: large;
+}
+		main{
+			background-color: #F5E6FF;
+			padding:20px;
+		}
+		section{
+			background-color: #FFD9F5;
+			margin: 20px;
+			padding: 20px;
+			border: solid 10px #E4C5E8;
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Listas de html</h1>
+	</header>
+<nav>
+			<ul>
+			<li><a href="mi_primera_pagina.html">Mi primera página</a></li>
+			<li><a href="tablas.html">Tablas</a></li>
+			<li><a href="listas.html">Listas</a></li>
+			<li><a href="enlaces.html">Enlaces</a></li>
+			<li><a href="imagenes.html">Imágenes</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="animación.html">Animación</a></li>
+			<li><a href="formularios.html">Formularios</a></li>
+			<li><a href="contenedores.html">Contenedores</a></li>
+			<li><a href="Media queries.html">Media queries</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Lista desordenada o con viñeta</h2>
+			<ul>
+				<li>Libreta profesional</li>
+				<li>Tijeras</li>
+				<li>Pegamento</li>
+				<li>Colores</li>
+				<li>100 hojas blancas</li>
+				<li>Lápiz No. 2 mirado</li>
+			</ul>
+		</section>
+	  <section>
+			<h2>Lista ordenada o viñeta numerada</h2>
+			<ol>
+				<li>Sara Musalem</li>
+				<li>Jessica mena</li>
+				<li>Victor Vargas</li>
+				<li>Ahgela Olivares</li>
+				<li>Francisco Faustino</li>
+				<li>Steffany Gómez</li>
+			</ol>			
+		</section>
+		<section>
+			<h2>Lista mixta</h2>
+			<ol>
+				<li>España</li>
+				<li>Argentina</li>
+				<li>México
+					<ul>
+						<li>Puebla</li>
+						<li>Veracruz</li>
+						<li>Guadalajara</li>
+					</ul>
+				</li>
+				<li>Estados Unidos</li>
+				<li>Italia
+					<ol>
+						<li>Roma</li>
+						<li>Florencia</li>
+						<li>Venecia</li>
+					</ol>
+				</li>
+				<li>Francia</li>
+			</ol>
+		</section>
+		<section>
+			<h2>Lista de descripción</h2>
+			<dl>
+				<dt>Usabilidad</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, perspiciatis, quis recusandae dolore obcaecati fugit voluptate? Doloribus nobis vero quos.</dd>
+				<dt>Accesibilidad</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, perspiciatis, quis recusandae dolore obcaecati fugit voluptate? Doloribus nobis vero quos.</dd>
+				<dt>Interactividad</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eligendi minima at quis, animi velit vel officia vero amet dicta, rem sequi natus, quibusdam in.</dd>
+			</dl>
+		</section>
+		<section>
+		<h2>Lista con cambio de viñetas</h2>
+			<ol>
+				<li>Mamíferos
+					<ul style="list-style-type:disc;">
+						<li>Vaca</li>
+						<li>Humanos</li>
+						<li>Perros</li>
+					</ul>
+				</li>
+				<li>Reptiles</li>
+					<ul style="list-style-type:square;">
+						<li>Lagartijas</li>
+						<li>Iguana</li>
+						<li>Serpientes</li>
+					</ul>
+				<li>Anfibios</li>
+					<ul style="list-style-type:lower-roman;">
+						<li>Rana</li>
+						<li>Salamandra</li>
+						<li>Cecilia</li>
+					</ul>
+				<li>Felinos</li>
+					<ul>
+						<li>Leones</li>
+						<li>Pantera</li>
+						<li>Tigre</li>
+					</ul>
+				<li>Caninos</li>
+					<ul style="list-style-image:url('img/ico/bombilla-electrica.png')">
+						<li>lorem</li>
+						<li>Lorem ipsum.</li>
+						<li>Lorem.</li>
+					</ul>
+				<li>Vertebrados</li>
+			</ol>
+		</section>
+	</main>
+	<footer>Realizado por: Delia Espíndola Romero</footer>
+</body>
+</html>
