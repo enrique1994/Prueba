@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_enlaces.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>Video en HTML5</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="mi_primera_pagina.html">Mi primera página</a></li>
+			<li><a href="tablas.html">Tablas</a></li>
+			<li><a href="listas.html">Listas</a></li>
+			<li><a href="enlaces.html">Enlaces</a></li>
+			<li><a href="imagenes.html">Imágenes</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="animación.html">Animación</a></li>
+			<li><a href="formularios.html">Formularios</a></li>
+			<li><a href="contenedores.html">Contenedores</a></li>
+			<li><a href="Media queries.html">Media queries</a></li>
+		</ul>
+	</nav>
+<main>
+  <section>
+		<h>Insercion de video simple</h>
+			<video controls widht="480px" height="270px">
+			  <source src="../medios/video/pexels-mikhail-nilov-6943287.mp4" type="video/mp4">
+			  <source src="" type="video/webm">
+			  <source src="" type="video/ogg">
+			  Your browser does not support the video tag </video>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptate nesciunt natus quo officiis corporis asperiores ea saepe architecto amet velit minima libero enim, minus repudiandae similique voluptatibus quasi! Beatae?</p>
+</section>
+	
+  <section>
+	    <h>Insercion de video con reproduccion automatica</h> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptate nesciunt natus quo officiis corporis asperiores ea saepe architecto amet velit minima libero enim, minus repudiandae similique voluptatibus quasi! Beatae?</p>
+	    <video controls autoplay muted width="50%" height="50%">
+	      <source src="../medios/video/pexels-mikhail-nilov-6943287.mp4" type="video/mp4">
+	      <source src="" type="video/webm">
+	      <source src="" type="video/ogg">
+	      Your browser does not support the video tag </video>
+  </section>
+	
+	  <section>
+	    <h>Insercion de video con reproduccion automatica y ciclica</h>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptate nesciunt natus quo officiis corporis asperiores ea saepe architecto amet velit minima libero enim, minus repudiandae similique voluptatibus quasi! Beatae?</p>
+	    <video controls autoplay loop style="width: 80%">
+	      <source src="../medios/video/pexels-mikhail-nilov.mp4" type="video/mp4">
+	      <source src="" type="video/webm">
+	      <source src="" type="video/ogg">
+	      Your browser does not support the video tag </video>
+  </section>
+	
+	<section>
+		<h1>Insercion de video con poster</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis iste minus quae in, a dignissimos. Minima dicta id obcaecati fugit aspernatur similique voluptatem, nobis iste ea sint doloremque inventore delectus!</p>
+		<video id="video_1" controls poster="img/descarga.jfif" autoplay>
+			<source src="../medios/video/pexels-mikhail-nilov.mp4" type="video/mp4">
+		</video>
+	</section>
+	
+	<section>
+		<h1>Insercion de video de repositorio: Youtube, Vimeo, Dailymotion</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ullam corporis adipisci est. Incidunt tempora natus, quas mollitia quam eius sint repellendus consequatur!</p>
+		<iframe style="width:50% height: auto" src="https://www.youtube.com/embed/i-fhg6fRw8o?start=59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+	<section>
+		<h1>Insercion de video de repositorio: Vimeo</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ullam corporis adipisci est. Incidunt tempora natus, quas mollitia quam eius sint repellendus consequatur!</p>
+		<iframe src="https://player.vimeo.com/video/137978122?h=d212ce6e6e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		<p><a href="https://vimeo.com/137978122">Dj 51 - Perrito Proceso</a> from <a href="https://vimeo.com/fertoninello">Fer Toninello</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+	</section>
+  </main>
+	<footer>
+		<h5>Elaborado por: Delia Espíndola Romero</h5>
+	</footer>
+</body>
+</html>
