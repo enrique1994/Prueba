@@ -1,0 +1,158 @@
+@charset "utf-8";
+header {
+    color: #FFFFFF;
+    background-color: #FFC2AD;
+    font-size: 48px;
+}
+header, nav, main, footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    height: auto;
+    background-color: #ABE3EA;
+}
+main {
+    height: auto;
+    background-color: #FFC2AD;
+    padding: 50px;
+    color: #FFFFFF;
+}
+body main section {
+    background-color: #198EEB;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: thick double #FFFFFF;
+}
+body nav ul {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 25px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+
+footer {
+    height: 80px;
+    background-color: #ABE3EA;
+}
+footer h5 {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+a:link {
+	color: #afaff3;
+	font-weight: bolder;
+}
+
+a:visited{
+	color: #ED756E;
+	font-weight: bolder
+}
+a:hover {
+    color: #F6DC33;
+    font-weight: bolder;
+    font-size: large;
+}
+img{
+    width: 25%;
+    margin-top: 30px;
+    height: auto;
+}
+#picture1 {
+    margin: 5px;
+    float: left;
+
+
+}
+main section p {
+    margin: 20px;
+}
+
+
+main section h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#seccion_1 {
+    overflow: auto;
+}
+.margin1 {
+    margin: 1px;
+}
+.opacidad1 {
+    opacity: 0.5;
+}
+.opcadiad2 {
+    opacity: 0.25;
+}
+.grises {
+    filter: grayscale(100%);
+}
+.borroso {
+    filter: blur(3px);
+}
+.brillo {
+    filter: brightness(100%);
+}
+.contraste {
+    filter: contrast(50%);
+}
+.saturacion {
+    filter: saturate (20%);
+}
+.sepia {
+    filter: sepia(100%);
+}
+.invertir {
+    filter: invert(100%);
+}
+.rotacion_tono {
+    filter: hue-rotate(90deg);
+}
+#video_1 {
+    width: 50%;
+}
+input[type=text]{
+	width: 80%;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #6C0D9F;
+	color: white;
+	borde:none;
+}
+input [type=text]:focus{
+	background-color: aliceblue;
+	color: cadetblue;
+	borde: 3 px solid #afaff3;
+}
+input[type=button], input[type=submit]{
+	background-color: #4c4c93;
+	color: white;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 50%;
+	cursor:pointer;
+}
