@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas en html</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			color: #E2d5d0;
+			font-size: 50px;
+		}
+		h2{
+			color: #E2d5d0;
+			font-size: 30px;
+		}
+		header, footer, main, nav{
+			width: 1024px;
+			margin: 0 auto;/*Centra la caja automáticamnete en horizontal*/
+			padding: 20px;
+		}
+		header, footer {
+			height: 50px;
+			text-align: center;
+			background-color: #2a2642;
+		}
+				nav {
+    height: auto;
+    background-color: #ABE3EA;}
+		body nav ul {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 25px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+		a{
+	text-decoration: none;
+}
+a:link {
+	color: #afaff3;
+	font-weight: bolder;
+}
+
+a:visited{
+	color: #ED756E;
+	font-weight: bolder
+}
+a:hover {
+    color: #F6DC33;
+    font-weight: bolder;
+    font-size: large;
+}
+		main{
+			height: auto;
+			background-color: #fabc28;
+		}
+		section{
+			background-color: #151723;
+			margin: 40px;
+			padding: 20px;
+			}
+		table {
+			border-collapse: collapse;
+		}
+		th, td{
+			padding: 10px;
+		}
+		th{
+			text-align: left;
+			/*background-color: #2a2642;*/
+			color: #e2d5d0;
+		}
+		td{
+			/*background-color: #e2d5d0;*/ 
+			color: #2a;
+		}
+		#t01{
+			border: double 4px #19cc49
+		}
+		#t01 th{
+			background-color: #eb0fb3;
+		}
+		#t01 td{
+			background-color: #f8d9d9;
+		}
+		#t02 th{
+			background-color: #2a2642;
+		}
+		#t02 th, #t02 td{
+			padding: 15px;
+			text-align: left;
+		}
+		#t02 tr:nth-child(even){
+			background-color:#fe724c;
+		}
+		#t02 tr:nth-child(odd){
+			background-color: #8ed48f;
+		}
+		.tabla th{
+			background-color: #fe724c;
+		}
+		.tabla td{
+			background-color: #e2d6d0;
+		}
+		#tablaaux tr: hover{
+			background-color: #e0d16f;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>TABLAS EN HTML</h1>
+	</header>
+	<nav>
+			<ul>
+			<li><a href="mi_primera_pagina.html">Mi primera página</a></li>
+			<li><a href="tablas.html">Tablas</a></li>
+			<li><a href="listas.html">Listas</a></li>
+			<li><a href="enlaces.html">Enlaces</a></li>
+			<li><a href="imagenes.html">Imágenes</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="animación.html">Animación</a></li>
+			<li><a href="formularios.html">Formularios</a></li>
+			<li><a href="contenedores.html">Contenedores</a></li>
+			<li><a href="Media queries.html">Media queries</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Tabla simple</h2>
+			<table class="tabla" border="1">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Dirección</th>
+						<th>Teléfono</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+					<tr>
+						<td>Daniel Vazquez</td>
+						<td>dany.vazquez@gmail.com</td>
+						<td>2223456789</td>
+					</tr>
+					<tr>
+						<td>María Guadalupe Sanchez</td>
+						<td>lupita23@hotmail.com</td>
+						<td>2221345678</td>
+					</tr>
+					<tr>
+						<td>Juan Esquivel</td>
+						<td>juan45@outlook.com</td>
+						<td>2227</td>
+					</tr>
+					<tr>
+						<td>Lucia Méndez</td><td>lucy_mendez@gmail.com</td>
+						<td>2224562136</td>
+					</tr>
+					<tr>
+						<td>Rodolfo Hernández</td>
+						<td>rodo_34@yahoo.com.mx</td>
+						<td>2225674598</td>
+					</tr>
+				<tfoot></tfoot>
+			</table>
+		</section>
+		<section>
+			<h2>Tabla con celda que abarca dos columnas</h2>
+			<table class="tabla" border="1">
+				<thead></thead>
+					<tr>
+						<th>Nombre</th>
+						<th colspan="2">Teléfono</th>
+					</tr>
+				<tbody>
+					<tr>
+						<td>Georgina López</td>
+						<td>222 2345678</td>
+						<td>2224567893</td>
+					</tr>
+					<tr>
+						<td>Hector Cortéz</td>
+						<td>555 7654322</td>
+						<td>5556789008</td>
+					</tr>
+					<tr>
+						<td>Mercedes Villa</td>
+						<td>777 9876456</td>
+						<td>7773453466</td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+			
+		</section>
+		<section>
+		<h2>Tabla modificada de identidad </h2>
+		<table width="600" border="1" id="t01">
+			<thead>
+			    <tr>
+			      <th scope="col">Nombre</th>
+  			  	  <th scope="col">Apellido</th>
+	   			  <th scope="col">Edad</th>
+			    </tr>
+			</thead>
+  			<tbody>
+  			  <tr>
+ 			     <td>Maria</td>
+ 			     <td>Flores Jimenez</td>
+ 			     <td>15</td>
+ 			   </tr>
+ 			   <tr>
+ 			     <td>José Manuel</td>
+ 			     <td>Gómez Pérez</td>
+ 			     <td>13</td>
+ 			   </tr>
+ 			   <tr>
+ 			     <td>Graciela</td>
+			     <td>Fernandez Juarez</td>
+			     <td>14</td>
+			    </tr>
+			</tbody>
+		</table>
+		</section>
+		<section>
+	    <table id="t02" border="1">
+	      <thead>
+	        <tr>
+	          <th>Nombre</th>
+	          <th>Dirección</th>
+	          <th>Teléfono</th>
+            </tr>
+          </thead>
+	      <tbody>
+          </tbody>
+	      <tr>
+	        <td>Daniel Vazquez</td>
+	        <td>dany.vazquez@gmail.com</td>
+	        <td>2223456789</td>
+          </tr>
+	      <tr>
+	        <td>María Guadalupe Sanchez</td>
+	        <td>lupita23@hotmail.com</td>
+	        <td>2221345678</td>
+          </tr>
+	      <tr>
+	        <td>Juan Esquivel</td>
+	        <td>juan45@outlook.com</td>
+	        <td>2227</td>
+          </tr>
+	      <tr>
+	        <td>Lucia Méndez</td>
+	        <td>lucy_mendez@gmail.com</td>
+	        <td>2224562136</td>
+          </tr>
+	      <tr>
+	        <td>Rodolfo Hernández</td>
+	        <td>rodo_34@yahoo.com.mx</td>
+	        <td>2225674598</td>
+          </tr>
+	      <tfoot>
+          </tfoot>
+        </table>
+		</section>
+		<section>
+			<table class="tabla" id="tablaaux" width="500" border="1">
+			<thead>
+			    <tr>		
+				<th scope="col">nombre</th>
+				<th scope="col">edad</th>
+   				<th scope="col">género</th>
+				<th scope="col">deporte</th>
+			    </tr>
+			</thead>
+  			<tbody>
+  			  <tr>
+  			    <td></td>
+  			    <td></td>
+  			    <td></td>
+  			    <td></td>
+  			  </tr>
+  			  <tr>
+  			    <td></td>
+  			    <td></td>
+  			    <td></td>
+				<td></td>
+ 			  </tr>
+  			  <tr>
+  			    <td></td>
+ 			    <td></td>
+ 			    <td></td>
+ 			    <td></td>
+ 			  </tr>
+ 			 </tbody>
+			<tfood>
+			</tfood>
+			</table>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>
